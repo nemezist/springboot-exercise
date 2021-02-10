@@ -106,7 +106,7 @@ public class BorrowingController {
         if(!borrowingHeaderRepository.existsById(id)){
             return ResponseWrapper.<String>builder()
                     .code(HttpStatus.BAD_REQUEST.value())
-                    .message("borrowing Id not Found!")
+                    .message("borrowing Id not found!")
                     .success(false)
                     .content(null)
                     .build();

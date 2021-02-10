@@ -102,7 +102,7 @@ public class AccountController {
         return ResponseWrapper.<String>builder()
                     .code(HttpStatus.OK.value())
                     .message("OK")
-                    .success(false)
+                    .success(true)
                     .content(null)
                     .build();
         }
